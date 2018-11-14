@@ -1,7 +1,7 @@
 {
-  "name": "web",
+  "name": "ng-muuri",
   "version": "0.0.0",
-  "description": "Fresh start at a web base",
+  "description": "Muuri in AngularJS 1.6.x",
   "main": "none",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -22,7 +22,9 @@
     "**/*.css"
   ],
   "dependencies": {
-    "lodash": "^4.17.11"
+    "angular": "^1.7.5",
+    "hammerjs": "^2.0.8",
+    "muuri": "^0.7.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",

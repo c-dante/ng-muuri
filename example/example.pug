@@ -1,0 +1,12 @@
+section
+	h3 ng-murri example
+	.grid(
+		ng-muuri
+		ng-muuri-options="$ctrl.muuriOptions"
+	)
+		.item(
+			ng-repeat="item in $ctrl.items track by $index"
+			ng-muuri-item
+		)
+			.item-content
+				p Hi, I'm item\#{{ $index }}.

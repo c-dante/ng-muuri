@@ -62,7 +62,7 @@ const buildPlugins = [
 
 	// Build the app
 	new HtmlWebpackPlugin({
-		title: 'Development Title',
+		title: 'Example Page',
 		chunksSortMode: 'dependency',
 		excludeChunks: [],
 	}),
@@ -120,7 +120,7 @@ module.exports = ({
 		plugins,
 		optimization,
 		entry: {
-			index: './src/index.js',
+			example: './example/example.js',
 		},
 		module: {
 			rules: [
