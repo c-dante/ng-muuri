@@ -1,14 +1,14 @@
 # ng-muuri
-An attempt at an [AngularJS](https://github.com/angular/angular.js) directive for the [muuri](https://github.com/haltu/muuri) grid library. [Here's the demo](c-dante.github.io/ng-muuri).
+An attempt at an [AngularJS](https://github.com/angular/angular.js) directive for the [muuri](https://github.com/haltu/muuri) grid library. [Here's the demo](https://c-dante.github.io/ng-muuri/).
 
 ```html
 <!-- Minimal usage -->
 <div class="grid" ng-muuri>
-	<div class="item" ng-muuri-item ng-repeat="item in [1, 2, 3] track by $index">
-		<div class="item-content">
-			<p>Hi, I'm item#{{ $index }}</p>
-		</div>
-	</div>
+  <div class="item" ng-muuri-item ng-repeat="item in [1, 2, 3] track by $index">
+    <div class="item-content">
+      <p>Hi, I'm item#{{ $index }}</p>
+    </div>
+  </div>
 </div>
 ```
 
