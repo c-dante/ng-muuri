@@ -1,12 +1,15 @@
 section
-	h3 ng-murri example
+	h3
+		| ng-murri example
+		button(ng-click="$ctrl.addMore()") +
+		button(ng-click="$ctrl.removeSome()") -
 	.grid(
 		ng-muuri
 		ng-muuri-options="$ctrl.muuriOptions"
 	)
 		.item(
-			ng-repeat="item in $ctrl.items track by $index"
+			ng-repeat="item in $ctrl.items track by item"
 			ng-muuri-item
 		)
 			.item-content
-				p Hi, I'm item\#{{ $index }}.
+				p {{ item }}

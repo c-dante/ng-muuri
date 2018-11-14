@@ -6,13 +6,29 @@ import ngMuuri from '../src';
 
 class ExampleCtrl {
 	constructor() {
-		this.items = [
-			'A', 'B', 'C',
-		];
+		this.itemId = 0;
+		this.items = [];
 
 		this.muuriOptions = {
 			dragEnabled: true,
 		};
+	}
+
+	$onInit() {
+		this.addMore();
+	}
+
+	addMore() {
+		for (let i = 0; i < 5; i++) {
+			this.items.push(this.itemId++);
+		}
+	}
+
+	removeSome() {
+		for (let i = 0; i < 5 && this.items.length > 0; i++) {
+			const toSplice = Math.floor(Math.random() * this.items.length);
+			this.items.splice(toSplice, 1);
+		}
 	}
 }
 
