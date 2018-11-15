@@ -38,8 +38,8 @@ class NgMuuriCtrl {
 				}
 
 				if (this.toRemove.length) {
+					this.grid.remove(this.toRemove);
 					this.toRemove = [];
-					this.grid.remove(this.toRemove, { layout: true });
 				}
 
 				// Reset waiting states
