@@ -65,6 +65,10 @@ const buildPlugins = [
 		title: 'Example Page',
 		chunksSortMode: 'dependency',
 		excludeChunks: [],
+		meta: {
+			'viewport': 'width=device-width, initial-scale=1',
+			'mobile-web-app-capable': 'yes',
+		},
 	}),
 	new ScriptExtHtmlWebpackPlugin({
 		sync: [
